@@ -1,6 +1,9 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
-import { getAuth,onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js";
+import { getAuth, 
+        onAuthStateChanged,
+        createUserWithEmailAndPassword,
+        signOut } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -21,3 +24,4 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 export {auth}
 export{onAuthStateChanged}
+export{signOut}
