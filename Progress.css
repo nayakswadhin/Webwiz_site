@@ -127,3 +127,14 @@ text-shadow: none;
 
     }
 }
+#logOut{
+  display: inline;
+  position: relative;
+  bottom: 40px;
+  left: 30px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
