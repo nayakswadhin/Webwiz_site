@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <form onsubmit="login()" id="loginForm" action="">
+        <form id="loginForm" action="">
             <h2>Sign in
                 <br>
                 Exclusively For Members
@@ -27,7 +27,7 @@
             <div class="links">
                 <a href="">Forgot Password</a>
             </div>
-                <a href="Progress.html" id="login" class="loginButton" type="submit">Login</a>
+                <button class="loginButton" type="submit">Login</button>
                 <!-- <input id="signUp" class="loginButton" type="submit" value="SignUp"> -->
         </form>
     </div>
@@ -36,7 +36,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
         
-    <script src="firebase.js"></script>
-    <script src="login.js"></script>
+   <script src="firebase.js" type="module"></script>
+    <script src="login.js" type="module"></script>
 </body>
 </html>
