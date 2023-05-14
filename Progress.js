@@ -1,3 +1,5 @@
+import {auth, onAuthStateChanged, signOut} from "./firebase.js";
+
 const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
 accordionItemHeaders.forEach(accordionItemHeader => {
@@ -22,3 +24,15 @@ accordionItemHeaders.forEach(accordionItemHeader => {
     
   });
 });
+
+
+onAuthStateChanged(auth,(user)=>{
+  console.log("Stated Changed",user);
+  if(!user){  
+      location.replace("login.html")
+  }
+})
+const userSignOut = async() => {
+  await signOut(auth);
+}
+document.getElementById('logOut').addEventListener('click',userSignOut)
